@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- JS -->
+	<script src="../../../scripts/buildfire.js"></script>
+	<script src="authManager.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+	<div class="w3-container w3-center">
+		<div class="w3-container">
+			<p style="margin-top: 10vw">
+				<h3>Rate our application</h3>
+			</p>
+			<p>If you want, give us a rating because we value feedback!</p>
+			<p>
+				<div id="iconsDiv">
+					<i id="1" onclick="saveUserRating(this)" class="" style="font-size:13vw;"></i>
+					<i id="2" onclick="saveUserRating(this)" class="" style="font-size:13vw"></i>
+					<i id="3" onclick="saveUserRating(this)" class="" style="font-size:13vw;"></i>
+					<i id="4" onclick="saveUserRating(this)" class="" style="font-size:13vw;"></i>
+					<i id="5" onclick="saveUserRating(this)" class="" style="font-size:13vw;"></i>
+
+				</div>
+			</p>
+			<p>(You can change your rating whenever you like, this gives us real-time user satisfaction)</p>
+
+			<div id="showingRating">
+				<h3 style="margin-top: 10vw">Overall user rating</h3>
+				<div class="circle">
+					<span id="averageRating"></span>
+				</div>
+			</div>
+
+			<div id="showingCount" style="margin-top: 5vw;">
+				<h5 style="margin-top: 10vw">Number of users who rated our app</h5>
+				<span style="font-size: 15vw" id="numberOfRatings"></span><i style="font-size: 10vw; margin-left: 3vw" class="fa fa-users"></i>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="./index.js"></script>
+</body>
+
+</html>
